@@ -77,3 +77,7 @@ class FileStorage:
             return all_obj.get_obj)
         else:
             return None
+
+    def count(self, cls=None):
+        '''class that is (optional)'''
+        return (len(self.all(cls)))
