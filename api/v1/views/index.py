@@ -9,16 +9,13 @@ from models import storage
 from models.base_model import BaseModel
 
 
-app.url_map.strict_slashes = False
-
-
-@app_views.route('/status')
+@app_views.route('/status', strict_slashes=False)
 def returnstuff():
     '''return stuff'''
     return jsonify(status='OK')
 
 
-@app_views.route('/stats')
+@app_views.route('/stats', strict_slashes=False)
 def stuff():
     '''JSON Responses'''
     todos = {
