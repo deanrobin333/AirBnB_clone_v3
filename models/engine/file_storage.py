@@ -74,7 +74,7 @@ class FileStorage:
         if cls and id:
             get_obj = '{}.{}'.format(cls, id)
             all_obj = self.all(cls)
-            return all_obj.get_obj)
+            return all_obj.get(get_obj)
         else:
             return None
 
